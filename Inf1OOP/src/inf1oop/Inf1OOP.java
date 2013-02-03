@@ -7,6 +7,7 @@ package inf1oop;
 /**
  * Write a description of class Memorization here.
  * 
+ * 
  * @author (your name) 
  * @version (a version number or a date)
  */
@@ -32,7 +33,8 @@ public class Mem
         return count+1;
     }
     
-    
+    /*splits a string according to a dividing character - the result of this is 
+     *an array of substrings.*/
     public void split( char c)
     {
         String [] stringz = new String [counts(s,c)];
@@ -45,16 +47,21 @@ public class Mem
                 stringz [u]=x;
                 u++;
                 x="";
-            }
+            } // if we hit a character that is equal to c, we cut the string
             else if(s.length()-1==i)
             {
                 stringz [u]=x+s.substring (i,i+1);
                 u++;
-            }
+            } /* if this is the end of the string, we memorize all that has happened
+               * since the last dividing character
+               * /
             else
             {
                 x=x+s.substring(i,i+1);
             }
+                /* if we are not hitting a dividing character or at the end of the string
+                 * just add it to the currently memorized substring and move on.
+                 */
         }
         
         for(int i=0;i<u;i++)
