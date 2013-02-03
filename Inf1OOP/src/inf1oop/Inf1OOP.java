@@ -1,16 +1,5 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package inf1oop;
 
-/**
- * Write a description of class Memorization here.
- * 
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Mem
 {
     String s;
